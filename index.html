@@ -35,7 +35,7 @@
                     </li>
                     <li class="search">
                         <div class="input-group">
-                            <input type="search" placeholder="search...">
+                            <input type="search" placeholder="search..." id="input-search">
                             <span class="input-group-btn">
                                 <button class="" type="button"><i class="fa fa-search"></i></button>
                             </span>
@@ -196,6 +196,29 @@
     </footer>
     <script src="lib/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            /*First efect passing mouse */
+            $("#id_logotipo").on("mouseover", function(){
+                console.log("Mouse no logotipo");
+
+                $("#banner h1").addClass("efeito");      
+
+            }).on("mouseout", function(){
+                $("#banner h1").removeClass("efeito");
+            });
+
+            /*Second */
+            $("#input-search").on("focus", function(){
+                $("li.search").addClass("ativo");
+
+            }).on("blur", function(){
+                $("li.search").removeClass("ativo");
+            });
+
+        });
+    </script>    
 </body>
 
 </html>

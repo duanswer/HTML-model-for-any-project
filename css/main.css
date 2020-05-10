@@ -50,8 +50,8 @@ header #id_logotipo {
     position: absolute;
     top: -77px;
     left: -60px;
+    z-index: 3;
 }
-
 
 #menu {
     display: list-item;
@@ -60,7 +60,13 @@ header #id_logotipo {
 }
 
 #menu li.search {
-    width: 213px;    
+    width: 213px;  
+    transition-timing-function: cubic-bezier(1, -.91, 0.91, 1);
+    transition-duration: 1s;  
+}
+
+#menu li.search.ativo {
+    width: 300px;    
 }
 
 #menu li.search input {
@@ -69,6 +75,10 @@ header #id_logotipo {
     border: none;
     height: 30px;
     line-height: 30px;
+}
+
+#menu li.search.ativo input {
+    width: 300px;    
 }
 
 #menu li.search ::-webkit-input-placeholder {
@@ -95,6 +105,12 @@ header #id_logotipo {
     padding: 10px 25px;
 }
 
+#banner h1.efeito {
+    color: red;
+    font-size: 12em;
+    
+}
+
 #banner {
     width: 100%;
     height: 728px;
@@ -105,6 +121,7 @@ header #id_logotipo {
 }
 
 #banner h1 {
+    transition: 1s;
     color: #FFF;
     top: 300px;
     position: relative;
@@ -256,7 +273,7 @@ header #id_logotipo {
 }
 
 footer {
-    margin-top: 110px;    
+    margin-top: 110px;       
 }
 
 footer .row {
@@ -279,6 +296,7 @@ footer .row-cinza-escuro {
     height: 60px;
     background-color: #11171D;
     border-top: #242D37 1px solid;
+    
 }
 
 footer .text-color {
