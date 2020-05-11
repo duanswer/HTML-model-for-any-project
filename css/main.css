@@ -205,6 +205,7 @@ header #id_logotipo {
     font-family: 'OpenSans-Light';
     font-size: 64px;  
     margin-top: 36px; 
+    
      
 }
 
@@ -214,17 +215,23 @@ header #id_logotipo {
     display: block;
 }
 
-#call-to-action {
+#call-to-action {   
     text-align: center;
+    
+}
+
+#call-to-action .row {
+    display: inline;
+    flex-wrap: wrap;
 }
 
 #call-to-action h2 {
     color: #5E2799;
     font-family: 'OpenSans-Light';
-    font-size: 48px;    
+    font-size: 48px;     
     text-align: center;
     margin-top: 105px;
-    margin-left: 225px
+    /*margin-left: 225px*/
     
 }
 
@@ -234,13 +241,17 @@ header #id_logotipo {
     margin: 0 auto;
     display: block;
     margin-top: -6px;
-    margin-right: 453px;
+    margin-bottom: 60px;
+    /*margin-right: 453px;*/
 }
 
 #call-to-action p {
     margin-top: 60px;
     margin-bottom: 40px;
     color: #656565;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    
 }
 
 
