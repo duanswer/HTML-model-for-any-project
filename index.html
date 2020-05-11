@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Orlando City</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="lib/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="lib/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="lib/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -62,27 +62,68 @@
                 <h2>Latest News</h2>
                 <hr>
             </div>
-            <div class="row thumbnails">
-                <div class="col-md-3">
-                    <img src="img/noticiathumb.jpg" alt="Noticia">
-                    <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
-                    <time>December 21, 2015</time>
+            <div class="row thumbnails owl-carousel owl-theme">
+                <div class="item">
+                    <div class="item-inner">
+                        <img src="img/noticiathumb.jpg" alt="Noticia">
+                        <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                        <time>December 21, 2015</time>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <img src="img/noticiathumb.jpg" alt="Noticia">
-                    <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
-                    <time>December 21, 2015</time>
+                <div class="item">
+                    <div class="item-inner">
+                        <img src="img/noticiathumb.jpg" alt="Noticia">
+                        <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                        <time>December 21, 2015</time>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <img src="img/noticiathumb.jpg" alt="Noticia">
-                    <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
-                    <time>December 21, 2015</time>
+                <div class="item">
+                    <div class="item-inner">
+                        <img src="img/noticiathumb.jpg" alt="Noticia">
+                        <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                        <time>December 21, 2015</time>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <img src="img/noticiathumb.jpg" alt="Noticia">
-                    <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
-                    <time>December 21, 2015</time>
+                <div class="item">
+                    <div class="item-inner">
+                        <img src="img/noticiathumb.jpg" alt="Noticia">
+                        <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                        <time>December 21, 2015</time>
+                    </div>
                 </div>
+
+                <div class="item">
+                    <div class="item-inner">
+                        <img src="img/noticiathumb.jpg" alt="Noticia">
+                        <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                        <time>December 21, 2015</time>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-inner">
+                        <img src="img/noticiathumb.jpg" alt="Noticia">
+                        <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                        <time>December 21, 2015</time>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-inner">
+                        <img src="img/noticiathumb.jpg" alt="Noticia">
+                        <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                        <time>December 21, 2015</time>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-inner">
+                        <img src="img/noticiathumb.jpg" alt="Noticia">
+                        <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                        <time>December 21, 2015</time>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div id="estatisticas">
@@ -200,28 +241,48 @@
     <script src="lib/dist/owl.carousel.min.js"></script>
     <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
 
             /*First function: efect whereas passing mouse */
-            $("#id_logotipo").on("mouseover", function(){
+            $("#id_logotipo").on("mouseover", function () {
                 console.log("Mouse no logotipo");
 
-                $("#banner h1").addClass("efeito");      
+                $("#banner h1").addClass("efeito");
 
-            }).on("mouseout", function(){
+            }).on("mouseout", function () {
                 $("#banner h1").removeClass("efeito");
             });
 
             /*Second function: elarging the search area*/
-            $("#input-search").on("focus", function(){
+            $("#input-search").on("focus", function () {
                 $("li.search").addClass("ativo");
 
-            }).on("blur", function(){
+            }).on("blur", function () {
                 $("li.search").removeClass("ativo");
             });
 
+            /*Carousel plugin*/
+            $(".thumbnails").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                navText: ["Anterior", "Próximo"],                
+                responsive: {
+                    0: {
+                        items: 1                        
+                    },
+                    480: {
+                        items: 3            
+                    },
+                    1000: {
+                        items: 4                        
+                    },
+                   
+                }
+            });
+
         });
-    </script>    
+    </script>
 </body>
 
 </html>
