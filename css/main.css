@@ -150,7 +150,7 @@ header #id_logotipo {
     font-size: 48px;
     text-transform: uppercase;
     text-align: center;
-    margin-top: -30px;
+    margin-top: 25px;
     margin-left: 425px
     
 }
@@ -290,6 +290,10 @@ header #id_logotipo {
 #call-to-action .row a {  
     margin: 20px;
     margin-top: -8px;
+}
+
+#call-to-action .row video {
+    margin-bottom: 20px;
 }
 
 footer {
@@ -438,3 +442,8 @@ footer .list-socials i {
     margin: 7px auto;
     
 }
+
+video {
+    width: 60%;
+}
+
