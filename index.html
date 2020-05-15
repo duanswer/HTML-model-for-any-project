@@ -1,8 +1,10 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width:device-width, initial-scale = 1">
+    <!--View port for devices-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Orlando City</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,13 +13,18 @@
     <link rel="stylesheet" href="lib/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/mobile.css" />
 
 </head>
 
 <body>
     <header>
+
+
         <div class="header-black">
             <div class="container">
+                <button type="button" id="btn-bars"><i class="fa fa-bars"></i></button>
+                <button type="button" id="btn-search"><i class="fa fa-search"></i></button>
                 <ul>
                     <li class="clubs"><a href="#"></a></li>
                 </ul>
@@ -53,7 +60,7 @@
                 </ul>
             </div>
         </div>
-        <div class="container">
+        <div class="container container-logo">
             <img id="id_logotipo" src="img/orlando-logo.png" alt="Logotipo">
         </div>
     </header>
@@ -68,6 +75,10 @@
                 <h2>Latest News</h2>
                 <hr>
             </div>
+            <!--button for smartphone-->
+            <button type="button" id="btn-news-prev"><i class="fa fa-angle-left"></i></button>
+            <button type="button" id="btn-news-next"><i class="fa fa-angle-right"></i></button>
+
             <div class="row thumbnails owl-carousel owl-theme">
                 <div class="item">
                     <div class="item-inner">
@@ -246,6 +257,7 @@
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/dist/owl.carousel.min.js"></script>
     <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/efeitos.js"></script>    
+    <script src="js/efeitos.js"></script>
 </body>
+
 </html>
