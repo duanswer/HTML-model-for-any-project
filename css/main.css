@@ -301,7 +301,8 @@ footer {
 }
 
 footer .row {
-    width: 100%;      
+    width: 100%;  
+    margin-left: 0;    
 }
 
 footer .row p{
@@ -312,7 +313,7 @@ footer .row p{
 }
 
 footer .row-cinza-claro {    
-    height: 200px;
+    height: 240px;
     background-color: #171F26;
 }
 
@@ -443,6 +444,15 @@ footer .list-socials i {
     
 }
 
+footer .hidden-sm-up {
+    display: none;
+}
+
+footer #page-up {
+    display: none;
+}
+
+
 video {
     width: 60%;
 }
@@ -451,3 +461,5 @@ video {
 #btn-news-prev, #btn-news-next {
     display: none;
 }
+
+

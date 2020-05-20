@@ -59,4 +59,17 @@ $(document).ready(function () {
     })
 
 
+    /*Page up: returns to the top */
+    $("#page-up").on("click", function(event){
+        $("html, body").animate({
+            scrollTop: 0
+        }, "slow");
+        /**Avoids to refresh the page when returns to the top */
+        event.preventDefault();
+    });
+
+    
+    
+
+
 });
