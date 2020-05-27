@@ -18,11 +18,27 @@
 </head>
 
 <body>
-    <header>
-
+    <header >
+        <!--col d-none d-sm-block-->
+        <div id="menu-mobile-mask" class="visible-xs"></div>
+        <div id="menu-mobile" class="visible-xs">
+            <ul class="list-unstyled">                
+                <!--class="navbar nav ml-auto"-->
+                <li class="nav-ietm"><a class="nav-link" href="videos.html">Videos</a></li>
+                <li class="nav-ietm"><a class="nav-link" href="#">Tickets</a></li>
+                <li class="nav-ietm"><a class="nav-link" href="#">News</a></li>
+                <li class="nav-ietm"><a class="nav-link" href="#">Schedual</a></li>
+            </ul>
+            <div class="bar-close">
+                <button type="button" class="btn btn-close"><i class="fa fa-close"></i></button>
+            </div>
+        </div>
 
         <div class="header-black">
             <div class="container">
+
+                <input type="search" id="input-search-mobile" class="mobileShow" placeholder="search...">
+
                 <button type="button" id="btn-bars"><i class="fa fa-bars"></i></button>
                 <button type="button" id="btn-search"><i class="fa fa-search"></i></button>
                 <ul>

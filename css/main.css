@@ -50,7 +50,8 @@ header #id_logotipo {
     position: absolute;
     top: -77px;
     left: -60px;
-    z-index: 3;
+    z-index: 10;
+    transition: 1s;
 }
 
 #menu {
@@ -75,10 +76,11 @@ header #id_logotipo {
     border: none;
     height: 30px;
     line-height: 30px;
+   /* position: absolute;*/ /*alter*/
 }
 
 #menu li.search.ativo input {
-    width: 300px;    
+    width: 300px;
 }
 
 #menu li.search ::-webkit-input-placeholder {
@@ -96,7 +98,7 @@ header #id_logotipo {
     color: rgba(255, 255, 255, .5);
     position: absolute;
     right: 35px;
-    bottom: 9px
+    bottom: 9px /*alter for 3*/
 }
 
 #menu li a {
@@ -459,6 +461,14 @@ video {
 
 #btn-bars, #btn-search, 
 #btn-news-prev, #btn-news-next {
+    display: none;
+}
+
+.mobileShow {
+    display: none;
+}
+
+.visible-xs {
     display: none;
 }
 
